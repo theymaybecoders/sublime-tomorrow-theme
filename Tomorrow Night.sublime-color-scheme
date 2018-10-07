@@ -1,0 +1,151 @@
+{
+    "name": "Tomorrow Night",
+    "author": "Chris Kempson",
+    "variables":
+    {
+        "black": "#1d1f21",
+        "blue": "#82a3bf",
+        "blue2": "#81a2be",
+        "blue3": "#3e999f",
+        "blue4": "#4271ae",
+        "blue5": "#8abeb7",
+        "grey": "#373b41",
+        "grey2": "#c5c8c6",
+        "grey3": "#4b4e55",
+        "grey4": "#ced1cf",
+        "grey5": "#282a2e",
+        "grey6": "#ced2cf",
+        "grey7": "#aeafad",
+        "grey8": "#999999",
+        "orange": "#f0c674",
+        "orange2": "#de935f",
+        "purple": "#967efb",
+        "purple2": "#b294bb",
+        "purple3": "#b798bf",
+        "red": "#df5f5f",
+        "red2": "#cc6666",
+        "red3": "#c82829",
+        "red4": "#f92672",
+        "white": "#ffffff",
+        "yellow": "#718c00",
+        "yellow2": "#b5bd68",
+        "yellow3": "#a6e22e"
+    },
+    "globals":
+    {
+        "foreground": "var(grey2)",
+        "background": "var(black)",
+        "caret": "var(grey7)",
+        "invisibles": "var(grey3)",
+        "line_highlight": "var(grey5)",
+        "selection": "var(grey)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment, string.quoted.double.block.python",
+            "foreground": "var(grey8)"
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, constant.other, source.php.embedded.line",
+            "foreground": "var(grey4)"
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit",
+            "foreground": "var(orange2)"
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, support.type, support.class",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, constant.other.color",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type, entity.name.tag.css",
+            "foreground": "var(purple2)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(grey6)",
+            "background": "var(red)"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "foreground": "var(grey6)",
+            "background": "var(blue)"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(grey6)",
+            "background": "var(purple3)"
+        },
+        {
+            "name": "Diff foreground",
+            "scope": "markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Diff insertion",
+            "scope": "markup.inserted.diff, meta.diff.header.to-file",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Diff deletion",
+            "scope": "markup.deleted.diff, meta.diff.header.from-file",
+            "foreground": "var(red3)"
+        },
+        {
+            "name": "Diff header",
+            "scope": "meta.diff.header.from-file, meta.diff.header.to-file",
+            "foreground": "var(white)",
+            "background": "var(blue4)"
+        },
+        {
+            "name": "Diff range",
+            "scope": "meta.diff.range",
+            "foreground": "var(blue3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red4)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(purple)"
+        }
+    ]
+}
