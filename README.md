@@ -1,3 +1,5 @@
+**NOTE: As evidenced by the fact I have not kept up with this repo at all as I haven't used Sublime Text in many years, this is not and has not been maintained at all**
+
 # TextMate Tomorrow Theme
 
 [![License](https://img.shields.io/github/license/theymaybecoders/sublime-tomorrow-theme.svg?style=flat-square)](https://github.com/theymaybecoders/sublime-tomorrow-theme/blob/master/LICENSE)
